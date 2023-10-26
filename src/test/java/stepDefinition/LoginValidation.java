@@ -57,12 +57,15 @@ public class LoginValidation {
 	public void it_should_not_be_successful() {
 		wait = new WebDriverWait(driver,Duration.ofSeconds(5));
 		wait.until(ExpectedConditions.elementToBeSelected(By.xpath(Base.oR.getProperty("unsuccessfulSignIn_txt"))));
+//		wait.until(ExpectedConditions.alertIsPresent());
+//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
 		String expectedTxt = "Login failed. Please try again later.";
 		String actualTxt = driver.findElement(By.xpath(Base.oR.getProperty("unsuccessfulSignIn_txt"))).getText();
 		softassert.assertEquals(actualTxt, expectedTxt);
 		softassert.assertAll();
 //		driver.navigate().refresh();
 		System.out.println("invalid login not successful");
+		
 	}
 
 	@When("admin input a valid email address in the email field")
