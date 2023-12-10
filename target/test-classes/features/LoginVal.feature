@@ -2,7 +2,7 @@
 Feature: Title of your feature
   I want to use this template for my feature file
 
-  @tag1
+  
   Scenario: Validate that admin cannot login with invalid credentials
     Given that admin is on login page
     When admin input email address in the email field

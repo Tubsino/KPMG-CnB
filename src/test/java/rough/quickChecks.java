@@ -2,6 +2,7 @@ package rough;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.Properties;
 
 import org.openqa.selenium.By;
@@ -42,6 +43,10 @@ public class quickChecks {
 		driver.findElement(By.xpath(oR.getProperty("email_field"))).sendKeys("Dreadporticos@gmail.com");
 		driver.findElement(By.xpath(oR.getProperty("pasword_field"))).sendKeys("Password@12");
 		driver.findElement(By.xpath(oR.getProperty("signIn_button"))).click();
+		
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		driver.findElement(By.xpath(oR.getProperty("createSurveyDash"))).click();
+		System.out.println(driver.findElement(By.xpath(oR.getProperty("currency_txt"))).getText());
 
 	}
 

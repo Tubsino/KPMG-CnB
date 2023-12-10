@@ -3,13 +3,19 @@ package stepDefinition;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.Properties;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
+import io.cucumber.java.After;
 import io.cucumber.java.AfterAll;
+import io.cucumber.java.Before;
 import io.cucumber.java.BeforeAll;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -20,6 +26,7 @@ public class Base {
 	public static Properties oR;
 	public static Properties assertions;
 	public static Properties data;
+	public static WebDriverWait wait;
 	
 	@BeforeAll
 	public static void setup() throws FileNotFoundException, IOException {
@@ -58,6 +65,17 @@ public class Base {
 	public static WebDriver getDriver() {
 		return driver;
 	}
+	
+	@After
+	public static void signOut() {
+		
+		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(oR.getProperty("SignOutDropdown"))));
+		driver.findElement(By.xpath(oR.getProperty("SignOutDropdown"))).click();
+		driver.findElement(By.xpath(oR.getProperty("logOut"))).click();
+	}
+	
+	
 	
 //	@AfterAll
 //	public static void tearDown(){

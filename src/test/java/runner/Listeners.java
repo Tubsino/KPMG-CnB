@@ -12,12 +12,12 @@ public class Listeners implements ITestListener {
 
 	@Override
 	public void onTestStart(ITestResult result) {
-		System.out.println("Not needed");
+		System.out.println("Application Launched");
 	}
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
-		System.out.println("Not needed");
+		System.out.println("On test success");
 	}
 
 	@Override
@@ -33,27 +33,27 @@ public class Listeners implements ITestListener {
 
 	@Override
 	public void onTestSkipped(ITestResult result) {
-		System.out.println("Not needed");
+		System.out.println("Test Skipped");
 	}
 
 	@Override
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
-		System.out.println("Not needed");
+		System.out.println("On test failed within success percentage");
 	}
 
 	@Override
 	public void onTestFailedWithTimeout(ITestResult result) {
-		System.out.println("Not needed");
+		System.out.println("Timed out");
 	}
 
 	@Override
 	public void onStart(ITestContext context) {
-		System.out.println("Not needed");
+		System.out.println("On start");
 	}
 
 	@Override
 	public void onFinish(ITestContext context) {
-		System.out.println("Not needed");
+		System.out.println("Browser closed");
 	}
 	
 	

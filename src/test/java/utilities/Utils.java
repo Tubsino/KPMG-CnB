@@ -19,7 +19,7 @@ public void captureScreenshot() throws IOException {
 		Date d = new Date();
 		String screenshotName = d.toString().replace(":", "_").replace(" ", "_");
 //		call take screenshot function
-		takeSnapshot(driver, System.getProperty("user_dir")+"\\target\\screenshot\\screenshot"+screenshotName+".jpg" );
+		takeSnapshot(driver, "F:\\Users\\Bluechip\\eclipse-workspace\\KPMG_CnB\\target\\screenshot\\screenshot"+screenshotName+".jpg" );
 	}
 	
 	
