@@ -31,27 +31,10 @@ public class Base {
 	public static Properties assertions;
 	public static Properties data;
 	public static WebDriverWait wait;
-	
-	public static String username = System.getenv("BROWSERSTACK_USERNAME");
-	public static String accessKey = System.getenv("BROWSERSTACK_ACCESS_KEY");
-	public static String buildName = System.getenv("BROWSERSTACK_BUILD_NAME");
-	public static String local = System.getenv("BROWSERSTACK_LOCAL");
-	public static String Localidentifier = System.getenv("BROWSERSTACK_LOCAL_IDENTIFIER");
+
 	
 	@BeforeAll
 	public static void setup() throws FileNotFoundException, IOException {
-		DesiredCapabilities capabilities = new DesiredCapabilities();
-		capabilities.setCapability("browserName", "Chrome");
-		HashMap<String, Object> browserstackOptions = new HashMap<String, Object>();
-		browserstackOptions.put("os", "Windows");
-		browserstackOptions.put("osVersion", "10");
-		browserstackOptions.put("sessionName", "BStack Build Name: " + buildName);
-		browserstackOptions.put("local", local);
-		browserstackOptions.put("localIdentifier", Localidentifier);
-		browserstackOptions.put("seleniumVersion", "4.0.0");
-		capabilities.setCapability("bstack:options", browserstackOptions);
-
-		driver = new RemoteWebDriver(new URL("https://" + username + ":" + accessKey + "@hub.browserstack.com/wd/hub"), capabilities);
 		
 		fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\properties\\config.properties");
 		Properties config = new Properties();
