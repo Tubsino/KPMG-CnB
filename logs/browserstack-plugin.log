@@ -66,3 +66,27 @@
 09:24:46.273 [main] INFO  c.b.BrowserStackPluginActivator - The previous launch removed.
 09:25:02.099 [Worker-113: Launching KPMG_CnB_src.test.java.runner.testng.xml] INFO  c.b.BrowserStackPluginActivator - The environment variables for the launch configuration are {BROWSERSTACK_EXEC_SOURCE=eclipse/1.0.3}
 09:25:51.771 [Framework stop - Equinox Container: 05213291-fb42-4c6f-ab7e-3e3e7c7dff9b] INFO  c.b.BrowserStackPluginActivator - Stopping BrowserStack Plugin...
+09:48:51.990 [main] INFO  c.b.launchers.LaunchMavenCommand - Executing maven archetype command - browserstack-sdk-archetype-integrate
+09:48:52.021 [main] INFO  c.b.launchers.LaunchMavenCommand - The maven properties for launcher are [archetypeVersion=1.2, archetypeGroupId=com.browserstack, archetypeArtifactId=browserstack-sdk-archetype-integrate, BROWSERSTACK_ACCESS_KEY=5S6WUXWdm7zGZ4vUpQ4s, groupId=com.browserstack, artifactId=java-archetype-integrate, BROWSERSTACK_USERNAME=olatunbosunoshod_yaZnxX, BROWSERSTACK_FRAMEWORK=java, BUILD_NAME=browserstack build, version=1.0, PROJECT_NAME=KPMG_CnB, BROWSERSTACK_SOURCE=java:eclipse:v1.0.3]
+09:50:36.851 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackEnabled
+09:50:36.852 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+09:50:36.853 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackEnabled : true P/KPMG_CnB
+09:50:36.854 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackDisabled
+09:50:36.855 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+09:50:36.858 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackDisabled : false P/KPMG_CnB
+09:55:26.265 [Worker-14: Launching KPMG_CnB_src.test.java.runner.testng.xml] INFO  c.b.BrowserStackPluginActivator - The previous launch removed.
+09:55:26.267 [Worker-14: Launching KPMG_CnB_src.test.java.runner.testng.xml] INFO  c.b.BrowserStackPluginActivator - Existing javaagentArgline (BROWSERSTACK_JAVAAGENT_ARGLINE) in plugin prefs is 
+09:55:26.270 [Worker-14: Launching KPMG_CnB_src.test.java.runner.testng.xml] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+09:55:26.271 [Worker-14: Launching KPMG_CnB_src.test.java.runner.testng.xml] INFO  c.b.BrowserStackPluginActivator - The environment variables for the launch configuration are {BROWSERSTACK_EXEC_SOURCE=eclipse/1.0.3}
+10:09:02.192 [main] INFO  c.b.BrowserStackPluginActivator - The previous launch removed.
+10:34:37.543 [Worker-6: Launching KPMG_CnB_src.test.java.runner.testng.xml] INFO  c.b.BrowserStackPluginActivator - Existing javaagentArgline (BROWSERSTACK_JAVAAGENT_ARGLINE) in plugin prefs is 
+10:34:37.554 [Worker-6: Launching KPMG_CnB_src.test.java.runner.testng.xml] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+10:34:37.558 [Worker-6: Launching KPMG_CnB_src.test.java.runner.testng.xml] INFO  c.b.BrowserStackPluginActivator - The environment variables for the launch configuration are {BROWSERSTACK_EXEC_SOURCE=eclipse/1.0.3}
+10:40:38.785 [Worker-28: Launching KPMG_CnB_src.test.java.runner.testng.xml] INFO  c.b.BrowserStackPluginActivator - The previous launch removed.
+10:40:38.790 [Worker-28: Launching KPMG_CnB_src.test.java.runner.testng.xml] INFO  c.b.BrowserStackPluginActivator - Existing javaagentArgline (BROWSERSTACK_JAVAAGENT_ARGLINE) in plugin prefs is 
+10:40:38.797 [Worker-28: Launching KPMG_CnB_src.test.java.runner.testng.xml] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+10:40:38.799 [Worker-28: Launching KPMG_CnB_src.test.java.runner.testng.xml] INFO  c.b.BrowserStackPluginActivator - The environment variables for the launch configuration are {BROWSERSTACK_EXEC_SOURCE=eclipse/1.0.3}
+10:43:30.782 [Worker-38: Launching KPMG_CnB_src.test.java.runner.testng.xml] INFO  c.b.BrowserStackPluginActivator - The previous launch removed.
+10:43:30.785 [Worker-38: Launching KPMG_CnB_src.test.java.runner.testng.xml] INFO  c.b.BrowserStackPluginActivator - Existing javaagentArgline (BROWSERSTACK_JAVAAGENT_ARGLINE) in plugin prefs is 
+10:43:30.797 [Worker-38: Launching KPMG_CnB_src.test.java.runner.testng.xml] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+10:43:30.802 [Worker-38: Launching KPMG_CnB_src.test.java.runner.testng.xml] INFO  c.b.BrowserStackPluginActivator - The environment variables for the launch configuration are {BROWSERSTACK_EXEC_SOURCE=eclipse/1.0.3}
